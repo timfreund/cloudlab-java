@@ -4,4 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+    <param-name>deploymentId</param-name>
+    <param-value>pretendthisisauuid</param-value>
+  </context-param>
+  <context-param>
+    <param-name>scorekeeperUrl</param-name>
+    <param-value>http://anewurl.codemuxer.com</param-value>
+  </context-param>
+  <listener>
+    <listener-class>com.codemuxer.cloudlab.CloudlabServletContextListener</listener-class>
+  </listener>
 </web-app>
